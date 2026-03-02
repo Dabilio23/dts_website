@@ -5,7 +5,7 @@ import SpotlightCard from './SpotlightCard'
 const icons = { ShieldCheck, Monitor, Server, Cpu, Database, TrendingUp }
 
 const colorMap = {
-  orange: { bg: 'bg-orange-500/10', border: 'border-orange-500/20', text: 'text-orange-400', hover: 'hover:border-orange-500/30', link: 'text-orange-400 hover:text-orange-300' },
+  primary: { bg: 'bg-primary-500/10', border: 'border-primary-500/20', text: 'text-primary-400', hover: 'hover:border-primary-500/30', link: 'text-primary-400 hover:text-primary-300' },
   blue:   { bg: 'bg-blue-500/10',   border: 'border-blue-500/20',   text: 'text-blue-400',   hover: 'hover:border-blue-500/30',   link: 'text-blue-400 hover:text-blue-300'   },
   purple: { bg: 'bg-purple-500/10', border: 'border-purple-500/20', text: 'text-purple-400', hover: 'hover:border-purple-500/30', link: 'text-purple-400 hover:text-purple-300' },
   green:  { bg: 'bg-green-500/10',  border: 'border-green-500/20',  text: 'text-green-400',  hover: 'hover:border-green-500/30',  link: 'text-green-400 hover:text-green-300'  },
@@ -15,7 +15,7 @@ const colorMap = {
 
 export default function ServiceCard({ service }) {
   const Icon = icons[service.icon] ?? ShieldCheck
-  const c = colorMap[service.color] ?? colorMap.orange
+  const c = colorMap[service.color] ?? colorMap.primary
 
   return (
     <SpotlightCard className={`rounded-[2rem] p-8 flex flex-col transition-all duration-300 ${c.hover}`}>

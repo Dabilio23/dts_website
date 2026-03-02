@@ -17,11 +17,11 @@ export default function Maintenance() {
     <Layout title="Maintenance & Tarifs" description="Packs de maintenance web DTS : Sécurité+, Performance+, Excellence+. Protégez et faites évoluer votre site à partir de 100€/mois.">
       {/* Hero */}
       <section className="overflow-hidden pt-44 pb-20 relative">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-orange-600/10 blur-[120px] rounded-full pointer-events-none opacity-40 z-0" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary-600/10 blur-[120px] rounded-full pointer-events-none opacity-40 z-0" />
         <div className="absolute inset-0 bg-grid-pattern z-0 pointer-events-none" />
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-orange-500/20 bg-orange-500/5 text-orange-300 text-[11px] uppercase font-semibold tracking-wide mb-8">
-            <ShieldCheck size={12} className="text-orange-400" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary-500/20 bg-primary-500/5 text-primary-300 text-[11px] uppercase font-semibold tracking-wide mb-8">
+            <ShieldCheck size={12} className="text-primary-400" />
             Maintenance & Tarifs
           </div>
           <h1 className="md:text-6xl text-4xl font-bold text-white tracking-tighter mb-6">
@@ -44,7 +44,7 @@ export default function Maintenance() {
             <div className="flex flex-wrap justify-center gap-3">
               {commitments.map((c) => (
                 <span key={c} className="flex items-center gap-2 px-4 py-2 sc-card rounded-full text-sm text-zinc-300">
-                  <CheckCircle size={14} className="text-orange-400" />
+                  <CheckCircle size={14} className="text-primary-400" />
                   {c}
                 </span>
               ))}
@@ -57,7 +57,7 @@ export default function Maintenance() {
       <section className="py-24 bg-black border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <div className="text-orange-500 font-mono text-xs uppercase tracking-wider mb-2">Nos packs</div>
+            <div className="text-primary-500 font-mono text-xs uppercase tracking-wider mb-2">Nos packs</div>
             <h2 className="md:text-4xl text-3xl font-semibold text-white tracking-tight mb-4">
               Choisissez le pack qui vous convient
             </h2>

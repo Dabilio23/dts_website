@@ -3,7 +3,7 @@ export const services = [
     id: 'maintenance',
     label: 'Maintenance',
     path: '/services/maintenance',
-    color: 'orange',
+    color: 'primary',
     icon: 'ShieldCheck',
     shortDesc: 'Sécurité & évolutions',
     description:

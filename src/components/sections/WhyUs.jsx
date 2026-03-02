@@ -14,12 +14,12 @@ export default function WhyUs() {
               <div className="text-zinc-400 text-sm">Croissance moyenne clients</div>
             </SpotlightCard>
             <SpotlightCard className="rounded-2xl p-8 text-center">
-              <div className="text-5xl font-bold text-orange-400 mb-2">+21%</div>
+              <div className="text-5xl font-bold text-primary-400 mb-2">+21%</div>
               <div className="text-zinc-400 text-sm">Satisfaction client</div>
             </SpotlightCard>
             <SpotlightCard className="rounded-2xl p-8 col-span-2">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400">
+                <div className="w-10 h-10 rounded-xl bg-primary-500/10 border border-primary-500/20 flex items-center justify-center text-primary-400">
                   <Rocket size={20} />
                 </div>
                 <h4 className="text-white font-semibold">Notre approche</h4>
@@ -31,7 +31,7 @@ export default function WhyUs() {
                   'Livraison, tests et optimisation continue',
                 ].map((step) => (
                   <div key={step} className="flex items-center gap-2 text-sm text-zinc-400">
-                    <CheckCircle size={16} className="text-orange-400 shrink-0" />
+                    <CheckCircle size={16} className="text-primary-400 shrink-0" />
                     {step}
                   </div>
                 ))}
@@ -41,7 +41,7 @@ export default function WhyUs() {
 
           {/* Contenu texte */}
           <div>
-            <div className="text-orange-500 font-mono text-xs uppercase tracking-wider mb-4">Pourquoi nous choisir</div>
+            <div className="text-primary-500 font-mono text-xs uppercase tracking-wider mb-4">Pourquoi nous choisir</div>
             <h2 className="md:text-4xl text-3xl font-semibold text-white tracking-tight mb-6">
               Nous convertissons votre vision en croissance.
             </h2>
@@ -66,7 +66,7 @@ export default function WhyUs() {
               ].map(({ icon: Icon, color, title, desc }) => (
                 <div key={title} className="flex items-start gap-3">
                   <div className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 mt-0.5 ${
-                    color === 'orange' ? 'bg-orange-500/10 border border-orange-500/20 text-orange-400'
+                    color === 'orange' ? 'bg-primary-500/10 border border-primary-500/20 text-primary-400'
                                       : 'bg-blue-500/10 border border-blue-500/20 text-blue-400'
                   }`}>
                     <Icon size={16} />

@@ -13,7 +13,7 @@ const solutions = [
     description: 'Solution SaaS complète pour la gestion des établissements scolaires -- inscriptions, notes, emplois du temps, communication parents-enseignants.',
     badges: ['EdTech', 'SaaS'],
     externalUrl: 'https://dabil.io',
-    color: 'orange',
+    color: 'primary',
   },
   {
     id: 'axis',
@@ -37,7 +37,7 @@ const solutions = [
 ]
 
 const colorMap = {
-  orange: { badge: 'bg-orange-500/10 border-orange-500/20 text-orange-300', hover: 'hover:border-orange-500/30 hover:shadow-[0_0_30px_rgba(234,88,12,0.1)]' },
+  primary: { badge: 'bg-primary-500/10 border-primary-500/20 text-primary-300', hover: 'hover:border-primary-500/30 hover:shadow-[0_0_30px_rgba(217,26,84,0.1)]' },
   blue:   { badge: 'bg-blue-500/10   border-blue-500/20   text-blue-300',   hover: 'hover:border-blue-500/30   hover:shadow-[0_0_30px_rgba(59,130,246,0.1)]'   },
   green:  { badge: 'bg-green-500/10  border-green-500/20  text-green-300',  hover: 'hover:border-green-500/30  hover:shadow-[0_0_30px_rgba(34,197,94,0.1)]'    },
 }
@@ -47,18 +47,18 @@ export default function Solutions() {
     <Layout title="Nos Solutions" description="Découvrez les solutions SaaS de Dabilio : gestion scolaire, trésorerie TPE/PME et paiement mobile money à Madagascar.">
       {/* Hero */}
       <section className="overflow-hidden pt-44 pb-20 relative">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-orange-600/10 blur-[120px] rounded-full pointer-events-none opacity-40 z-0" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary-600/10 blur-[120px] rounded-full pointer-events-none opacity-40 z-0" />
         <div className="absolute inset-0 bg-grid-pattern z-0 pointer-events-none" />
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-orange-500/20 bg-orange-500/5 text-orange-300 text-[11px] uppercase font-semibold tracking-wide mb-8">
-            <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-signal" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary-500/20 bg-primary-500/5 text-primary-300 text-[11px] uppercase font-semibold tracking-wide mb-8">
+            <span className="w-1.5 h-1.5 rounded-full bg-primary-500 animate-signal" />
             Nos produits SaaS
           </div>
           <h1 className="md:text-6xl text-4xl font-bold text-white tracking-tighter mb-6">
             Nos <span className="bg-clip-text text-transparent bg-gradient-to-br from-white via-white to-zinc-500">Solutions</span>
           </h1>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-            Au-delà des services, Dabilio développe ses propres produits SaaS innovants pour répondre aux besoins spécifiques du marché malgache et africain.
+            Au-delà des services, DTS développe ses propres produits SaaS innovants pour répondre aux besoins spécifiques du marché malgache et africain.
           </p>
         </div>
       </section>

@@ -4,7 +4,7 @@ export const testimonials = [
     name: 'Shafiul Amin',
     role: 'Finance advisor',
     initials: 'SA',
-    gradient: 'from-orange-900 to-zinc-900',
+    gradient: 'from-primary-900 to-zinc-900',
     quote:
       'DTS a transformé notre stratégie digitale de manière remarquable. Leur expertise technique combinée à une vraie compréhension de nos besoins métier a produit des résultats bien au-delà de nos attentes.',
   },

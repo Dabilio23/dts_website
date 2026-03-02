@@ -21,22 +21,22 @@ export default function ServiceDetailPage({
   process = [],
 }) {
   const glowColor = {
-    orange: 'bg-orange-600/10',
+    orange: 'bg-primary-600/10',
     blue:   'bg-blue-600/10',
     purple: 'bg-purple-600/10',
     green:  'bg-green-600/10',
     cyan:   'bg-cyan-600/10',
     pink:   'bg-pink-600/10',
-  }[accentColor] ?? 'bg-orange-600/10'
+  }[accentColor] ?? 'bg-primary-600/10'
 
   const iconColor = {
-    orange: 'bg-orange-500/10 border-orange-500/20 text-orange-400',
+    orange: 'bg-primary-500/10 border-primary-500/20 text-primary-400',
     blue:   'bg-blue-500/10   border-blue-500/20   text-blue-400',
     purple: 'bg-purple-500/10 border-purple-500/20 text-purple-400',
     green:  'bg-green-500/10  border-green-500/20  text-green-400',
     cyan:   'bg-cyan-500/10   border-cyan-500/20   text-cyan-400',
     pink:   'bg-pink-500/10   border-pink-500/20   text-pink-400',
-  }[accentColor] ?? 'bg-orange-500/10 border-orange-500/20 text-orange-400'
+  }[accentColor] ?? 'bg-primary-500/10 border-primary-500/20 text-primary-400'
 
   return (
     <Layout title={title} description={metaDesc}>
@@ -45,8 +45,8 @@ export default function ServiceDetailPage({
         <div className={`absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] ${glowColor} blur-[120px] rounded-full pointer-events-none opacity-40 z-0`} />
         <div className="absolute inset-0 bg-grid-pattern z-0 pointer-events-none" />
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-orange-500/20 bg-orange-500/5 text-orange-300 text-[11px] uppercase font-semibold tracking-wide mb-8">
-            <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-signal" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary-500/20 bg-primary-500/5 text-primary-300 text-[11px] uppercase font-semibold tracking-wide mb-8">
+            <span className="w-1.5 h-1.5 rounded-full bg-primary-500 animate-signal" />
             {badge}
           </div>
           <h1 className="md:text-6xl text-4xl font-bold text-white tracking-tighter mb-6">
@@ -72,7 +72,7 @@ export default function ServiceDetailPage({
               <ul className="space-y-4">
                 {benefits.map((b) => (
                   <li key={b} className="flex items-start gap-3 text-zinc-400 text-sm">
-                    <CheckCircle size={16} className="text-orange-400 mt-0.5 shrink-0" />
+                    <CheckCircle size={16} className="text-primary-400 mt-0.5 shrink-0" />
                     {b}
                   </li>
                 ))}
@@ -87,13 +87,13 @@ export default function ServiceDetailPage({
         <section className="py-24 bg-black border-t border-white/5">
           <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16">
-              <div className="text-orange-500 font-mono text-xs uppercase tracking-wider mb-2">Notre méthode</div>
+              <div className="text-primary-500 font-mono text-xs uppercase tracking-wider mb-2">Notre méthode</div>
               <h2 className="md:text-4xl text-3xl font-semibold text-white tracking-tight">Comment ça fonctionne</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               {process.map((step, idx) => (
                 <SpotlightCard key={step.title} className="rounded-2xl p-6 text-center">
-                  <div className="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 text-orange-400 font-bold text-lg flex items-center justify-center mx-auto mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-primary-500/10 border border-primary-500/20 text-primary-400 font-bold text-lg flex items-center justify-center mx-auto mb-4">
                     {idx + 1}
                   </div>
                   <h4 className="text-white font-semibold mb-2">{step.title}</h4>

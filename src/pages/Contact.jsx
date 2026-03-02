@@ -13,11 +13,11 @@ export default function Contact() {
     <Layout title="Contact" description="Contactez DTS pour votre projet de transformation digitale. Demandez un devis gratuit, nous répondons sous 24h.">
       {/* Hero */}
       <section className="overflow-hidden pt-44 pb-20 relative">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-orange-600/10 blur-[120px] rounded-full pointer-events-none opacity-40 z-0" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary-600/10 blur-[120px] rounded-full pointer-events-none opacity-40 z-0" />
         <div className="absolute inset-0 bg-grid-pattern z-0 pointer-events-none" />
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-orange-500/20 bg-orange-500/5 text-orange-300 text-[11px] uppercase font-semibold tracking-wide mb-8">
-            <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-signal" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary-500/20 bg-primary-500/5 text-primary-300 text-[11px] uppercase font-semibold tracking-wide mb-8">
+            <span className="w-1.5 h-1.5 rounded-full bg-primary-500 animate-signal" />
             Parlons de votre projet
           </div>
           <h1 className="md:text-6xl text-4xl font-bold text-white tracking-tighter mb-6">
@@ -45,13 +45,13 @@ export default function Contact() {
               <div className="space-y-6">
                 {contactInfo.map(({ icon: Icon, label, value, href }) => (
                   <div key={label} className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 shrink-0">
+                    <div className="w-10 h-10 rounded-xl bg-primary-500/10 border border-primary-500/20 flex items-center justify-center text-primary-400 shrink-0">
                       <Icon size={18} />
                     </div>
                     <div>
                       <p className="text-zinc-500 text-xs mb-1">{label}</p>
                       {href ? (
-                        <a href={href} className="text-white hover:text-orange-400 transition-colors text-sm font-medium">{value}</a>
+                        <a href={href} className="text-white hover:text-primary-400 transition-colors text-sm font-medium">{value}</a>
                       ) : (
                         <p className="text-white text-sm leading-relaxed">{value}</p>
                       )}

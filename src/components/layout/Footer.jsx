@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Zap, Twitter, Linkedin, Instagram, Globe, Phone, Mail, MapPin } from 'lucide-react'
+import { Twitter, Linkedin, Instagram, Globe, Phone, Mail, MapPin } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -9,11 +9,8 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="col-span-2 pr-8">
-            <Link to="/" className="flex items-center gap-3 text-white font-bold tracking-tight text-lg mb-4 group">
-              <div className="w-9 h-9 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center group-hover:bg-orange-500/20 transition-all">
-                <Zap size={18} className="text-orange-500" />
-              </div>
-              DTS
+            <Link to="/" className="flex items-center mb-4" aria-label="Dabilio">
+              <img src="/logo.png" alt="Dabilio" className="h-36 w-auto object-contain" />
             </Link>
             <p className="text-zinc-400 text-xs font-medium mb-1">Co-créer, Innover, Transformer.</p>
             <p className="text-zinc-500 mb-6 leading-relaxed max-w-xs text-xs">
@@ -46,7 +43,7 @@ export default function Footer() {
               { to: '/contact',  label: 'Nous contacter' },
               { to: '/solutions',label: 'Solutions'      },
             ].map(({ to, label }) => (
-              <Link key={label} to={to} className="text-zinc-500 hover:text-orange-400 transition-colors">
+              <Link key={label} to={to} className="text-zinc-500 hover:text-primary-400 transition-colors">
                 {label}
               </Link>
             ))}
@@ -59,11 +56,11 @@ export default function Footer() {
               <MapPin size={14} className="text-zinc-600 mt-0.5 shrink-0" />
               <span>Lot IVP 7 Bis Ankadifotsy,<br />Befelatanana,<br />Antananarivo, 101, Madagascar.</span>
             </div>
-            <a href="tel:+261348229857" className="flex items-center gap-2 text-zinc-500 hover:text-orange-400 transition-colors text-xs">
+            <a href="tel:+261348229857" className="flex items-center gap-2 text-zinc-500 hover:text-primary-400 transition-colors text-xs">
               <Phone size={13} className="text-zinc-600" />
               +261 34 82 298 57
             </a>
-            <a href="mailto:hello@dabil.io" className="flex items-center gap-2 text-zinc-500 hover:text-orange-400 transition-colors text-xs">
+            <a href="mailto:hello@dabil.io" className="flex items-center gap-2 text-zinc-500 hover:text-primary-400 transition-colors text-xs">
               <Mail size={13} className="text-zinc-600" />
               hello@dabil.io
             </a>

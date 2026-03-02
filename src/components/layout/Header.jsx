@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { Zap, ArrowRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 export default function Header() {
   return (
@@ -9,11 +9,8 @@ export default function Header() {
         aria-label="Menu principal"
       >
         {/* Logo */}
-        <NavLink to="/" className="flex items-center gap-3 pr-4 group shrink-0" aria-label="DTS Accueil">
-          <div className="flex shadow-lg shadow-orange-500/10 overflow-hidden group-hover:bg-orange-500/20 group-hover:border-orange-500/30 transition-all duration-300 bg-orange-500/10 w-9 h-9 border-orange-500/20 border rounded-xl items-center justify-center">
-            <Zap size={20} className="text-orange-500 transition-transform duration-300 group-hover:scale-110" />
-          </div>
-          <span className="text-white font-bold tracking-tight text-[15px]">DTS</span>
+        <NavLink to="/" className="flex items-center pr-4 shrink-0" aria-label="Dabilio Accueil">
+          <img src="/logo.png" alt="Dabilio" className="h-24 w-auto object-contain" />
         </NavLink>
 
         {/* Nav links */}

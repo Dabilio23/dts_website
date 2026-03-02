@@ -17,7 +17,7 @@ export default function Layout({ children, title, description }) {
   }, [title, description])
 
   return (
-    <div className="antialiased selection:bg-orange-500/30 selection:text-white">
+    <div className="antialiased selection:bg-primary-500/30 selection:text-white">
       <Header />
       <main>{children}</main>
       <Footer />

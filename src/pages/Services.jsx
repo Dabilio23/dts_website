@@ -8,11 +8,11 @@ export default function Services() {
     <Layout title="Nos Services" description="Découvrez tous les services DTS : maintenance web, sites optimisés, régie IT, Pack SaaS AI, données B2B et marketing digital.">
       {/* Hero */}
       <section className="overflow-hidden pt-44 pb-20 relative">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-orange-600/10 blur-[120px] rounded-full pointer-events-none opacity-40 z-0" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary-600/10 blur-[120px] rounded-full pointer-events-none opacity-40 z-0" />
         <div className="absolute inset-0 bg-grid-pattern z-0 pointer-events-none" />
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-orange-500/20 bg-orange-500/5 text-orange-300 text-[11px] uppercase font-semibold tracking-wide mb-8">
-            <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-signal" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary-500/20 bg-primary-500/5 text-primary-300 text-[11px] uppercase font-semibold tracking-wide mb-8">
+            <span className="w-1.5 h-1.5 rounded-full bg-primary-500 animate-signal" />
             Ce que nous faisons
           </div>
           <h1 className="md:text-6xl text-4xl font-bold text-white tracking-tighter mb-6">

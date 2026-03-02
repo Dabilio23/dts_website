@@ -16,12 +16,12 @@ export default function Dabilio() {
     <Layout title="Dabilio -- Gestion scolaire" description="Dabilio est la solution SaaS de gestion scolaire par DTS. Inscriptions, notes, emplois du temps et communication -- tout en un.">
       {/* Hero */}
       <section className="overflow-hidden pt-44 pb-20 relative">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-orange-600/10 blur-[120px] rounded-full pointer-events-none opacity-40 z-0" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary-600/10 blur-[120px] rounded-full pointer-events-none opacity-40 z-0" />
         <div className="absolute inset-0 bg-grid-pattern z-0 pointer-events-none" />
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           <div className="flex flex-wrap justify-center gap-2 mb-8">
             {['EdTech', 'SaaS'].map((b) => (
-              <span key={b} className="px-3 py-1 rounded-full text-[11px] font-semibold border bg-orange-500/10 border-orange-500/20 text-orange-300">{b}</span>
+              <span key={b} className="px-3 py-1 rounded-full text-[11px] font-semibold border bg-primary-500/10 border-primary-500/20 text-primary-300">{b}</span>
             ))}
           </div>
           <h1 className="md:text-6xl text-4xl font-bold text-white tracking-tighter mb-4">Dabilio</h1>
@@ -52,7 +52,7 @@ export default function Dabilio() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {features.map(({ icon: Icon, title, desc }) => (
               <SpotlightCard key={title} className="rounded-2xl p-8 flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 shrink-0">
+                <div className="w-12 h-12 rounded-xl bg-primary-500/10 border border-primary-500/20 flex items-center justify-center text-primary-400 shrink-0">
                   <Icon size={24} />
                 </div>
                 <div>

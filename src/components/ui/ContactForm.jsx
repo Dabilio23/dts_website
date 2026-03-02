@@ -34,7 +34,7 @@ export default function ContactForm() {
             name="nom"
             required
             placeholder="Jean Dupont"
-            className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder:text-zinc-600 focus:outline-none focus:border-orange-500/50 transition-colors"
+            className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder:text-zinc-600 focus:outline-none focus:border-primary-500/50 transition-colors"
           />
         </div>
         <div>
@@ -44,7 +44,7 @@ export default function ContactForm() {
             name="email"
             required
             placeholder="jean@example.com"
-            className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder:text-zinc-600 focus:outline-none focus:border-orange-500/50 transition-colors"
+            className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder:text-zinc-600 focus:outline-none focus:border-primary-500/50 transition-colors"
           />
         </div>
       </div>
@@ -56,7 +56,7 @@ export default function ContactForm() {
             name="objet"
             required
             placeholder="Demande de devis"
-            className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder:text-zinc-600 focus:outline-none focus:border-orange-500/50 transition-colors"
+            className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder:text-zinc-600 focus:outline-none focus:border-primary-500/50 transition-colors"
           />
         </div>
         <div>
@@ -65,7 +65,7 @@ export default function ContactForm() {
             type="tel"
             name="telephone"
             placeholder="+261 34 00 000 00"
-            className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder:text-zinc-600 focus:outline-none focus:border-orange-500/50 transition-colors"
+            className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder:text-zinc-600 focus:outline-none focus:border-primary-500/50 transition-colors"
           />
         </div>
       </div>
@@ -76,7 +76,7 @@ export default function ContactForm() {
           required
           rows={5}
           placeholder="Décrivez votre projet..."
-          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder:text-zinc-600 focus:outline-none focus:border-orange-500/50 transition-colors resize-none"
+          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder:text-zinc-600 focus:outline-none focus:border-primary-500/50 transition-colors resize-none"
         />
       </div>
       <button

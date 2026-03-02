@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, FileText, ShieldCheck, Monitor, Server, Cpu, Database, TrendingUp } from 'lucide-react'
 
 const serviceCards = [
-  { icon: ShieldCheck, label: 'Maintenance',      sub: 'Sécurité & évolutions', color: 'orange', delay: '0s'   },
+  { icon: ShieldCheck, label: 'Maintenance',      sub: 'Sécurité & évolutions', color: 'primary', delay: '0s'   },
   { icon: Monitor,     label: 'Site web optimisé', sub: 'Performance & SEO',     color: 'blue',   delay: '0.3s' },
   { icon: Server,      label: 'Régie IT',          sub: 'Experts à la demande',  color: 'purple', delay: '0.6s' },
   { icon: Cpu,         label: 'Pack SaaS AI',      sub: 'IA & automatisation',   color: 'green',  delay: '0.9s' },
@@ -11,7 +11,7 @@ const serviceCards = [
 ]
 
 const colorMap = {
-  orange: 'bg-orange-500/10 border-orange-500/20 text-orange-400',
+  primary: 'bg-primary-500/10 border-primary-500/20 text-primary-400',
   blue:   'bg-blue-500/10   border-blue-500/20   text-blue-400',
   purple: 'bg-purple-500/10 border-purple-500/20 text-purple-400',
   green:  'bg-green-500/10  border-green-500/20  text-green-400',
@@ -23,13 +23,13 @@ export default function Hero() {
   return (
     <section className="overflow-hidden min-h-[90vh] pt-44 pb-20 relative">
       {/* Glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-orange-600/10 blur-[120px] rounded-full pointer-events-none opacity-50 mix-blend-screen z-0" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-primary-600/10 blur-[120px] rounded-full pointer-events-none opacity-50 mix-blend-screen z-0" />
       <div className="absolute inset-0 bg-grid-pattern z-0 pointer-events-none" />
 
       <div className="z-10 text-center max-w-7xl mx-auto px-6 relative">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-orange-500/20 bg-orange-500/5 text-orange-300 text-[11px] uppercase font-semibold tracking-wide mb-8 cursor-default shadow-[0_0_20px_rgba(234,88,12,0.1)] backdrop-blur-sm">
-          <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-signal" />
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary-500/20 bg-primary-500/5 text-primary-300 text-[11px] uppercase font-semibold tracking-wide mb-8 cursor-default shadow-[0_0_20px_rgba(217,26,84,0.1)] backdrop-blur-sm">
+          <span className="w-1.5 h-1.5 rounded-full bg-primary-500 animate-signal" />
           Co-créer · Innover · Transformer
         </div>
 

@@ -6,7 +6,7 @@ export default function Testimonials() {
     <section className="py-24 bg-black border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <div className="text-orange-500 font-mono text-xs uppercase tracking-wider mb-2">Témoignages</div>
+          <div className="text-primary-500 font-mono text-xs uppercase tracking-wider mb-2">Témoignages</div>
           <h2 className="text-3xl font-semibold text-white tracking-tight mb-4">Ce que disent nos clients</h2>
           <p className="text-zinc-400 text-sm">La confiance accordée à notre expertise, exprimée par ceux qui nous font confiance.</p>
         </div>

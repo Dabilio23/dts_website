@@ -6,7 +6,7 @@ export default function ServicesGrid() {
     <section className="py-24 bg-[#020202] border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <div className="text-orange-500 font-mono text-xs uppercase tracking-wider mb-2">Nos services</div>
+          <div className="text-primary-500 font-mono text-xs uppercase tracking-wider mb-2">Nos services</div>
           <h2 className="md:text-5xl text-3xl font-semibold text-white tracking-tight mb-4">
             Tout ce qu'il vous faut pour<br />réussir votre transformation.
           </h2>
