@@ -41,7 +41,7 @@ export default function Hero() {
         </h1>
 
         <p className="leading-relaxed text-lg font-light text-zinc-400 max-w-xl mx-auto mb-10">
-          Dabilio prend le relais de votre transformation numérique. Ensemble, nous convertissons vos ambitions business en solutions digitales performantes.
+          DTS prend le relais de votre transformation numérique. Ensemble, nous convertissons vos ambitions business en solutions digitales performantes.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-20">
