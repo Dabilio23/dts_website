@@ -22,20 +22,23 @@
 
 ## Pages et routes
 
-| Route | Nom | Statut contenu |
-|---|---|---|
-| `/` | Accueil | ✅ Complet |
-| `/a-propos` | À propos | ⚠️ À définir |
-| `/services` | Nos Services | ✅ Liste confirmée |
-| `/services/maintenance` | Maintenance & Tarifs | ✅ Complet |
-| `/services/siteweb-optimise` | Siteweb optimisé | ⚠️ Description à fournir |
-| `/services/regie-it` | Régie IT | ⚠️ Description à fournir |
-| `/services/pack-saas-ai` | Pack Saas AI | ⚠️ Description à fournir |
-| `/services/donnees-b2b` | Données B2B | ⚠️ Description à fournir |
-| `/services/marketing-digital` | Marketing digital | ⚠️ Description à fournir |
-| `/expertises` | Nos Expertises | ⚠️ Contenu partiel |
-| `/solutions` | Solutions | ✅ Complet |
-| `/contact` | Contact | ✅ Complet |
+| Route | Nom | Type | Statut contenu |
+|---|---|---|---|
+| `/` | Accueil | Page interne | ✅ Complet |
+| `/a-propos` | À propos | Page interne | ⚠️ À définir |
+| `/services` | Nos Services | Page interne | ✅ Liste confirmée |
+| `/services/maintenance` | Maintenance & Tarifs | Page interne | ✅ Complet |
+| `/services/siteweb-optimise` | Siteweb optimisé | Page interne | ⚠️ Description à fournir |
+| `/services/regie-it` | Régie IT | Page interne | ⚠️ Description à fournir |
+| `/services/pack-saas-ai` | Pack Saas AI | Page interne | ⚠️ Description à fournir |
+| `/services/donnees-b2b` | Données B2B | Page interne | ⚠️ Description à fournir |
+| `/services/marketing-digital` | Marketing digital | Page interne | ⚠️ Description à fournir |
+| `/expertises` | Nos Expertises | Page interne | ⚠️ Contenu partiel |
+| `/solutions` | Nos Solutions | Page interne | ✅ Complet |
+| `/solutions/dabilio` | Dabilio | Page interne | ✅ Complet |
+| `/solutions/axis` | Axis | Page interne | ✅ Complet |
+| `/solutions/axis-pay` | Axis Pay | Page interne | ⚠️ URL externe à définir |
+| `/contact` | Contact | Page interne | ✅ Complet |
 
 ---
 
@@ -176,21 +179,33 @@ Bouton : "SEND MESSAGE"
 
 > Les 3 solutions sont des produits SaaS développés par Dabilio. Chaque card renvoie vers le site externe correspondant (lien `target="_blank"`).
 
-| # | Nom | URL | Description |
-|---|---|---|---|
-| 1 | **Dabilio** | https://dabil.io | Solution SaaS de gestion scolaire |
-| 2 | **Axis** | https://axis.dabil.io | Plateforme de gestion de trésorerie pour TPE et PME |
-| 3 | **Axis Pay** | *(pas d'URL externe)* | Plateforme de paiement mobile money à Madagascar |
-
-### Structure de la page
-- **Titre de section :** Nos Solutions
+### Page liste (`/solutions`)
+- **Titre :** Nos Solutions
 - **Sous-titre :** *(à définir)*
-- **Grille de 3 cards produit**, chacune avec :
-  - Nom du produit
-  - Description courte
-  - Badge / tag (ex. "SaaS", "Fintech", "EdTech")
-  - Bouton "Découvrir" → lien externe (sauf Axis Pay si pas d'URL)
-- **CTA bas de page :** "Vous avez un projet ? Parlons-en." → `/contact`
+- **Grille de 3 cards**, chacune avec : nom, description courte, badge, bouton "Découvrir" → sous-page
+
+### Sous-pages détail
+
+#### `/solutions/dabilio`
+- **Nom :** Dabilio
+- **Description :** Solution SaaS de gestion scolaire
+- **Lien externe :** https://dabil.io
+- **Badge :** EdTech · SaaS
+
+#### `/solutions/axis`
+- **Nom :** Axis
+- **Description :** Plateforme de gestion de trésorerie pour TPE et PME
+- **Lien externe :** https://axis.dabil.io
+- **Badge :** Fintech · SaaS
+
+#### `/solutions/axis-pay`
+- **Nom :** Axis Pay
+- **Description :** Plateforme de paiement mobile money à Madagascar
+- **Lien externe :** *(à définir)*
+- **Badge :** Fintech · Mobile Money
+
+### CTA bas de page
+"Vous avez un projet ? Parlons-en." → `/contact`
 
 ---
 

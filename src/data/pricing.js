@@ -1,0 +1,48 @@
+export const pricingPlans = [
+  {
+    id: 'securite',
+    name: 'Pack Sécurité +',
+    price: '100',
+    highlight: false,
+    features: [
+      'Mises à jour CMS / extensions',
+      'Sauvegardes hebdomadaires',
+      'Surveillance pare-feu',
+      'Certificat SSL',
+      'Assistance e-mail (5j/7)',
+      'Rapport mensuel',
+    ],
+  },
+  {
+    id: 'performance',
+    name: 'Pack Performance +',
+    price: '150',
+    highlight: true,
+    badge: 'Populaire',
+    includes: 'Sécurité+',
+    features: [
+      'Sauvegardes quotidiennes',
+      'Optimisation vitesse / cache',
+      'Surveillance temps réel',
+      'Maintenance corrective illimitée',
+      'Support prioritaire (6j/7)',
+      'Mises à jour contenu / visuels',
+    ],
+  },
+  {
+    id: 'excellence',
+    name: 'Pack Excellence +',
+    price: '250',
+    highlight: false,
+    includes: 'Performance+',
+    features: [
+      'Supervision 24h/24',
+      'Dépannage prioritaire (< 4h)',
+      'Environnement de préproduction',
+      'Audit trimestriel',
+      'Accompagnement SEO & RGPD',
+      'Support illimité (chat / tél.)',
+      'Conseils stratégiques mensuels',
+    ],
+  },
+]
