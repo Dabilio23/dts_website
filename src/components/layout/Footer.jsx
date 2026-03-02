@@ -39,9 +39,10 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <h4 className="text-white font-semibold">Liens rapides</h4>
             {[
-              { to: '/a-propos', label: 'À propos'       },
-              { to: '/contact',  label: 'Nous contacter' },
-              { to: '/solutions',label: 'Solutions'      },
+              { to: '/a-propos',         label: 'À propos'         },
+              { to: '/contact',          label: 'Nous contacter'   },
+              { to: '/solutions',        label: 'Solutions'         },
+              { to: '/mentions-legales', label: 'Mentions légales'  },
             ].map(({ to, label }) => (
               <Link key={label} to={to} className="text-zinc-500 hover:text-primary-400 transition-colors">
                 {label}
@@ -54,7 +55,7 @@ export default function Footer() {
             <h4 className="text-white font-semibold">Contact</h4>
             <div className="flex items-start gap-2 text-zinc-500 text-xs leading-relaxed">
               <MapPin size={14} className="text-zinc-600 mt-0.5 shrink-0" />
-              <span>Lot IVP 7 Bis Ankadifotsy,<br />Befelatanana,<br />Antananarivo, 101, Madagascar.</span>
+              <span>Lot 270 Bis 5 Pagodes Ambodiakondro,<br />Ambohijanaka, Antananarivo Atsimondrano, 102</span>
             </div>
             <a href="tel:+261348229857" className="flex items-center gap-2 text-zinc-500 hover:text-primary-400 transition-colors text-xs">
               <Phone size={13} className="text-zinc-600" />
