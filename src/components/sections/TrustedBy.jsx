@@ -1,12 +1,11 @@
 const clients = [
-  { name: 'Orange Madagascar',  logo: null },
-  { name: 'Air Madagascar',     logo: null },
-  { name: 'BNI Madagascar',     logo: null },
-  { name: 'Jovena',             logo: null },
-  { name: 'Telma',              logo: null },
-  { name: 'Axian Group',        logo: null },
-  { name: 'Mada Motors',        logo: null },
-  { name: 'BMOI',               logo: null },
+  { name: 'Housseni', logo: '/logo_housseni.svg', h: 'h-12' },
+  { name: 'onno', logo: '/logo_onno_v2.png', h: 'h-16' },
+  { name: 'chez tutur', h: 'h-16' },
+  { name: 'pereepl', h: 'h-16' },
+  { name: 'isika', logo: '/logo_isika.png', h: 'h-16' },
+  { name: 'Housseni', logo: '/logo_housseni.svg', h: 'h-12' },
+  { name: 'onno', logo: '/logo_onno_v2.png', h: 'h-16' }
 ]
 
 function LogoItem({ client }) {
