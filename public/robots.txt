@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dts.dabil.io/sitemap.xml

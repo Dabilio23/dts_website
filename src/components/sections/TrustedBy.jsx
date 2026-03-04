@@ -1,12 +1,12 @@
 const clients = [
-  { name: 'Orange Madagascar',  logo: null },
-  { name: 'Air Madagascar',     logo: null },
-  { name: 'BNI Madagascar',     logo: null },
-  { name: 'Jovena',             logo: null },
-  { name: 'Telma',              logo: null },
-  { name: 'Axian Group',        logo: null },
-  { name: 'Mada Motors',        logo: null },
-  { name: 'BMOI',               logo: null },
+  { name: 'Housseni', logo: '/logo_housseni.svg', h: 'h-12' },
+  { name: 'onno', logo: '/logo_onno.png', h: 'h-16' },
+  { name: 'chez tutur', h: 'h-16' },
+  { name: 'pereepl', h: 'h-16' },
+  { name: 'isika', logo: '/logo_isika.png', h: 'h-16' },
+  { name: 'Housseni', logo: '/logo_housseni.svg', h: 'h-12' },
+  { name: 'onno', logo: '/logo_onno.png', h: 'h-16' }
+
 ]
 
 function LogoItem({ client }) {
@@ -16,7 +16,7 @@ function LogoItem({ client }) {
         <img
           src={client.logo}
           alt={client.name}
-          className="h-8 w-auto object-contain opacity-40 hover:opacity-70 transition-opacity grayscale"
+          className={`${client.h} w-auto object-contain opacity-40 hover:opacity-70 transition-opacity grayscale`}
         />
       ) : (
         <span className="text-zinc-600 hover:text-zinc-400 transition-colors font-semibold text-sm tracking-wide whitespace-nowrap">

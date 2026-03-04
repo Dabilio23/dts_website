@@ -11,10 +11,30 @@ export default function Layout({ children, title, description }) {
   }, [pathname])
 
   useEffect(() => {
-    if (title) document.title = `${title} | DTS`
-    const meta = document.querySelector('meta[name="description"]')
-    if (meta && description) meta.setAttribute('content', description)
-  }, [title, description])
+    const BASE_URL = 'https://dts.dabil.io'
+    const fullTitle = title ? `${title} | DTS` : 'DTS | Digital Transformation Services'
+    const desc = description || 'DTS accompagne la transformation digitale des entreprises à Madagascar.'
+    const url = `${BASE_URL}${pathname}`
+
+    document.title = fullTitle
+
+    const setMeta = (sel, val) => {
+      const el = document.querySelector(sel)
+      if (el) el.setAttribute('content', val)
+    }
+    const setLink = (sel, val) => {
+      const el = document.querySelector(sel)
+      if (el) el.setAttribute('href', val)
+    }
+
+    setMeta('meta[name="description"]', desc)
+    setLink('link[rel="canonical"]', url)
+    setMeta('meta[property="og:title"]', fullTitle)
+    setMeta('meta[property="og:description"]', desc)
+    setMeta('meta[property="og:url"]', url)
+    setMeta('meta[name="twitter:title"]', fullTitle)
+    setMeta('meta[name="twitter:description"]', desc)
+  }, [title, description, pathname])
 
   return (
     <div className="antialiased selection:bg-primary-500/30 selection:text-white">
