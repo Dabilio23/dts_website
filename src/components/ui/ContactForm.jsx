@@ -1,13 +1,23 @@
 import { useState } from 'react'
 import { Send } from 'lucide-react'
 
+const FORMSPREE_ID = 'mgolgryo' // ex: xrgwabcd
+
 export default function ContactForm() {
   const [sent, setSent] = useState(false)
+  const [loading, setLoading] = useState(false)
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // Formspree or mailto fallback
-    e.target.submit()
+    setLoading(true)
+    const data = new FormData(e.target)
+    const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+      method: 'POST',
+      body: data,
+      headers: { Accept: 'application/json' },
+    })
+    setLoading(false)
+    if (res.ok) setSent(true)
   }
 
   if (sent) {
@@ -21,8 +31,6 @@ export default function ContactForm() {
 
   return (
     <form
-      action="https://formspree.io/f/hello@dabil.io"
-      method="POST"
       onSubmit={handleSubmit}
       className="space-y-4"
     >
@@ -81,7 +89,8 @@ export default function ContactForm() {
       </div>
       <button
         type="submit"
-        className="flex items-center gap-2 bg-white hover:bg-zinc-200 text-black text-sm font-semibold h-12 rounded-full px-8 transition-all hover:scale-[1.02] active:scale-[0.98]"
+        disabled={loading}
+        className="flex items-center gap-2 bg-white hover:bg-zinc-200 disabled:opacity-50 text-black text-sm font-semibold h-12 rounded-full px-8 transition-all hover:scale-[1.02] active:scale-[0.98]"
       >
         <Send size={16} />
         SEND MESSAGE
