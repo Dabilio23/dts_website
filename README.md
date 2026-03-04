@@ -1,5 +1,4 @@
-# DTS — Site vitrine
-
+# DTS — siteweb
 Site web officiel de **DTS (Digital Transformation Services)**, une agence spécialisée dans la transformation digitale des entreprises à Madagascar.
 
 Construit avec React + Vite + Tailwind CSS, déployé sur Vercel.
