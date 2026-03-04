@@ -9,6 +9,7 @@ const solutions = [
     id: 'dabilio',
     path: '/solutions/dabilio',
     name: 'Dabilio',
+    logo: '/logo_dabilio3.svg',
     tagline: 'La gestion scolaire réinventée.',
     description: 'Solution SaaS complète pour la gestion des établissements scolaires -- inscriptions, notes, emplois du temps, communication parents-enseignants.',
     badges: ['EdTech', 'SaaS'],
@@ -19,6 +20,7 @@ const solutions = [
     id: 'axis',
     path: '/solutions/axis',
     name: 'Axis',
+    logo: '/logo_axis.svg',
     tagline: 'La trésorerie sous contrôle.',
     description: 'Plateforme de gestion de trésorerie pour TPE et PME. Suivez vos flux financiers, anticipez vos besoins et prenez de meilleures décisions.',
     badges: ['Fintech', 'SaaS'],
@@ -29,6 +31,7 @@ const solutions = [
     id: 'axis-pay',
     path: '/solutions/axis-pay',
     name: 'Axis Pay',
+    logo: '/logo_axispay.svg',
     tagline: 'Le paiement mobile money simplifié.',
     description: 'Plateforme de paiement mobile money à Madagascar. Encaissez, transférez et gérez vos fonds en toute sécurité depuis n\'importe quel appareil.',
     badges: ['Fintech', 'Mobile Money'],
@@ -38,8 +41,8 @@ const solutions = [
 
 const colorMap = {
   primary: { badge: 'bg-primary-500/10 border-primary-500/20 text-primary-300', hover: 'hover:border-primary-500/30 hover:shadow-[0_0_30px_rgba(217,26,84,0.1)]' },
-  blue:   { badge: 'bg-blue-500/10   border-blue-500/20   text-blue-300',   hover: 'hover:border-blue-500/30   hover:shadow-[0_0_30px_rgba(59,130,246,0.1)]'   },
-  green:  { badge: 'bg-green-500/10  border-green-500/20  text-green-300',  hover: 'hover:border-green-500/30  hover:shadow-[0_0_30px_rgba(34,197,94,0.1)]'    },
+  blue: { badge: 'bg-blue-500/10   border-blue-500/20   text-blue-300', hover: 'hover:border-blue-500/30   hover:shadow-[0_0_30px_rgba(59,130,246,0.1)]' },
+  green: { badge: 'bg-green-500/10  border-green-500/20  text-green-300', hover: 'hover:border-green-500/30  hover:shadow-[0_0_30px_rgba(34,197,94,0.1)]' },
 }
 
 export default function Solutions() {
@@ -76,7 +79,7 @@ export default function Solutions() {
                       <span key={b} className={`px-2 py-0.5 rounded-full text-[11px] font-semibold border ${c.badge}`}>{b}</span>
                     ))}
                   </div>
-                  <h3 className="text-white text-2xl font-bold mb-2">{sol.name}</h3>
+                  <img src={sol.logo} alt={sol.name} className={`w-auto mb-2 object-contain object-left ${sol.id === 'dabilio' ? 'h-12' : 'h-8'}`} />
                   <p className="text-zinc-500 text-sm italic mb-4">{sol.tagline}</p>
                   <p className="text-zinc-400 text-[15px] leading-relaxed flex-grow mb-8">{sol.description}</p>
                   <div className="flex gap-3">
