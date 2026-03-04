@@ -61,9 +61,9 @@ export default function Footer() {
               <Phone size={13} className="text-zinc-600" />
               +261 34 82 298 57
             </a>
-            <a href="mailto:hello@dabil.io" className="flex items-center gap-2 text-zinc-500 hover:text-primary-400 transition-colors text-xs">
+            <a href="mailto:marketing@dabil.io" className="flex items-center gap-2 text-zinc-500 hover:text-primary-400 transition-colors text-xs">
               <Mail size={13} className="text-zinc-600" />
-              hello@dabil.io
+              marketing@dabil.io
             </a>
           </div>
         </div>
