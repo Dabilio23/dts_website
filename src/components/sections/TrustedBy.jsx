@@ -1,7 +1,7 @@
 const clients = [
   { name: 'Housseni', logo: '/logo_housseni.svg', h: 'h-12' },
-  { name: 'onno', logo: '/logo_onno_v2.png', h: 'h-16' },
-  { name: 'chez tutur', h: 'h-16' },
+  { name: 'onno', logo: '/logo_onno_v2.png', h: 'h-20' },
+  { name: 'chez tutur', logo: '/logo_tutur.png', h: 'h-7' },
   { name: 'pereepl', h: 'h-16' },
   { name: 'isika', logo: '/logo_isika.png', h: 'h-16' },
   { name: 'Housseni', logo: '/logo_housseni.svg', h: 'h-12' },
@@ -15,7 +15,7 @@ function LogoItem({ client }) {
         <img
           src={client.logo}
           alt={client.name}
-          className="h-8 w-auto object-contain opacity-40 hover:opacity-70 transition-opacity grayscale"
+          className={`${client.h ?? 'h-8'} w-auto object-contain opacity-40 hover:opacity-70 transition-opacity grayscale`}
         />
       ) : (
         <span className="text-zinc-600 hover:text-zinc-400 transition-colors font-semibold text-sm tracking-wide whitespace-nowrap">

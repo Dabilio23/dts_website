@@ -9,6 +9,7 @@ const solutions = [
     id: 'dabilio',
     path: '/solutions/dabilio',
     name: 'Dabilio',
+    logo: '/logo_dabilio3.svg',
     tagline: 'La gestion scolaire réinventée.',
     description: 'Solution SaaS complète pour la gestion des établissements scolaires -- inscriptions, notes, emplois du temps, communication parents-enseignants.',
     badges: ['EdTech', 'SaaS'],
@@ -19,6 +20,7 @@ const solutions = [
     id: 'axis',
     path: '/solutions/axis',
     name: 'Axis',
+    logo: '/logo_axis.svg',
     tagline: 'La trésorerie sous contrôle.',
     description: 'Plateforme de gestion de trésorerie pour TPE et PME. Suivez vos flux financiers, anticipez vos besoins et prenez de meilleures décisions.',
     badges: ['Fintech', 'SaaS'],
@@ -29,6 +31,7 @@ const solutions = [
     id: 'axis-pay',
     path: '/solutions/axis-pay',
     name: 'Axis Pay',
+    logo: '/logo_axispay.svg',
     tagline: 'Le paiement mobile money simplifié.',
     description: 'Plateforme de paiement mobile money à Madagascar. Encaissez, transférez et gérez vos fonds en toute sécurité depuis n\'importe quel appareil.',
     badges: ['Fintech', 'Mobile Money'],
@@ -71,12 +74,14 @@ export default function Solutions() {
               const c = colorMap[sol.color]
               return (
                 <SpotlightCard key={sol.id} className={`rounded-[2rem] p-8 flex flex-col transition-all duration-300 ${c.hover}`}>
+                  {sol.logo && (
+                    <img src={sol.logo} alt={sol.name} className={`${sol.id === 'dabilio' ? 'h-16' : 'h-10'} w-auto object-contain mb-6 self-start`} />
+                  )}
                   <div className="flex flex-wrap gap-2 mb-6">
                     {sol.badges.map((b) => (
                       <span key={b} className={`px-2 py-0.5 rounded-full text-[11px] font-semibold border ${c.badge}`}>{b}</span>
                     ))}
                   </div>
-                  <h3 className="text-white text-2xl font-bold mb-2">{sol.name}</h3>
                   <p className="text-zinc-500 text-sm italic mb-4">{sol.tagline}</p>
                   <p className="text-zinc-400 text-[15px] leading-relaxed flex-grow mb-8">{sol.description}</p>
                   <div className="flex gap-3">
