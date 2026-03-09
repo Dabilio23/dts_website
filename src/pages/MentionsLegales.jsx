@@ -19,7 +19,7 @@ export default function MentionsLegales() {
             <h2 className="text-white font-semibold text-base mb-3">1. Éditeur du site</h2>
             <p><span className="text-zinc-300">Raison sociale :</span> Dabilio Technology Solutions</p>
             <p><span className="text-zinc-300">Adresse :</span> Lot 270 Bis 5 Pagodes Ambodiakondro, Ambohijanaka, Antananarivo Atsimondrano, 102</p>
-            <p><span className="text-zinc-300">Téléphone :</span> +261 34 82 298 57</p>
+            <p><span className="text-zinc-300">Téléphone :</span> +261 34 24 975 18</p>
             <p><span className="text-zinc-300">Email :</span> hello@dabil.io</p>
           </section>
 

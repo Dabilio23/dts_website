@@ -11,9 +11,9 @@ export default function CtaBanner() {
             <h2 className="md:text-4xl text-3xl font-bold text-white tracking-tight mb-4">Besoin de devis ?</h2>
             <p className="text-zinc-400 text-lg mb-8">Contactez-nous et discutons de votre projet digital.</p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
-              <a href="tel:+261348229857" className="flex items-center gap-3 text-white hover:text-primary-400 transition-colors">
+              <a href="tel:+261342497518" className="flex items-center gap-3 text-white hover:text-primary-400 transition-colors">
                 <Phone size={20} className="text-primary-500" />
-                +261 34 82 298 57
+                +261 34 24 975 18
               </a>
               <div className="hidden sm:block w-px h-6 bg-white/10" />
               <a href="mailto:hello@dabil.io" className="flex items-center gap-3 text-white hover:text-primary-400 transition-colors">

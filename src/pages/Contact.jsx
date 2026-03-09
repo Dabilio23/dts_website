@@ -3,7 +3,7 @@ import Layout from '../components/layout/Layout'
 import ContactForm from '../components/ui/ContactForm'
 
 const contactInfo = [
-  { icon: Phone,  label: 'Téléphone', value: '+261 34 82 298 57', href: 'tel:+261348229857'      },
+  { icon: Phone,  label: 'Téléphone', value: '+261 34 24 975 18', href: 'tel:+261342497518'      },
   { icon: Mail,   label: 'Email',     value: 'hello@dabil.io',    href: 'mailto:hello@dabil.io'  },
   { icon: MapPin, label: 'Adresse',   value: 'Lot IVP 7 Bis Ankadifotsy, Befelatanana, Antananarivo, 101, Madagascar.' },
 ]
