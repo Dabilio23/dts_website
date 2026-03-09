@@ -57,9 +57,9 @@ export default function Footer() {
               <MapPin size={14} className="text-zinc-600 mt-0.5 shrink-0" />
               <span>Lot 270 Bis 5 Pagodes Ambodiakondro,<br />Ambohijanaka, Antananarivo Atsimondrano, 102</span>
             </div>
-            <a href="tel:+261348229857" className="flex items-center gap-2 text-zinc-500 hover:text-primary-400 transition-colors text-xs">
+            <a href="tel:+261342497518" className="flex items-center gap-2 text-zinc-500 hover:text-primary-400 transition-colors text-xs">
               <Phone size={13} className="text-zinc-600" />
-              +261 34 82 298 57
+              +261 34 24 975 18
             </a>
             <a href="mailto:marketing@dabil.io" className="flex items-center gap-2 text-zinc-500 hover:text-primary-400 transition-colors text-xs">
               <Mail size={13} className="text-zinc-600" />
