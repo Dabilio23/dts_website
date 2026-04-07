@@ -4,6 +4,8 @@ const clients = [
   { name: 'chez tutur', logo: '/logo_tutur.png', h: 'h-7' },
   { name: 'pereepl', h: 'h-16' },
   { name: 'isika', logo: '/logo_isika.png', h: 'h-16' },
+  { name: 'Kodata', logo: '/logo-kodata.png', h: 'h-10' },
+  { name: 'RLC', logo: '/logo-rlc.png', h: 'h-14', invert: true },
   { name: 'Housseni', logo: '/logo_housseni.svg', h: 'h-12' },
   { name: 'onno', logo: '/logo_onno_v2.png', h: 'h-16' }
 ]
@@ -15,7 +17,7 @@ function LogoItem({ client }) {
         <img
           src={client.logo}
           alt={client.name}
-          className={`${client.h ?? 'h-8'} w-auto object-contain opacity-40 hover:opacity-70 transition-opacity grayscale`}
+          className={`${client.h ?? 'h-8'} w-auto object-contain opacity-40 hover:opacity-70 transition-opacity grayscale ${client.invert ? 'invert' : ''}`}
         />
       ) : (
         <span className="text-zinc-600 hover:text-zinc-400 transition-colors font-semibold text-sm tracking-wide whitespace-nowrap">
